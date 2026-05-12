@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Core Fitness - Exercises</title>
+  <link rel="stylesheet" href="css/exercises.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <h1>Core Fitness</h1>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="equipment.html">Equipment</a>
+      <a href="exercises.html" class="active">Exercises</a>
+      <a href="inbody.html">InBody</a>
+      <a href="workoutplan.html">Workout plan</a>
+      <a href="goalguide.html">Goal guide</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero exercises-header">
+      <div>
+        <h1>Exercises Guide</h1>
+        <p>Learn how to use gym equipment correctly and safely</p>
+      </div>
+
+      <div class="exercises-controls">
+
+        <label for="searchInput" class="visually-hidden">Search exercises</label>
+        <input type="search" id="searchInput" name="searchInput" placeholder="Search exercises..." autocomplete="off" spellcheck="false">
+
+        <label for="filterSelect" class="visually-hidden">Filter exercises</label>
+        <select id="filterSelect">
+          <option value="all">All</option>
+          <option value="strength">Strength</option>
+          <option value="cardio">Cardio</option>
+        </select>
+      </div>
+    </section>
+
+    <p class="scroll-text">Scroll to see more exercises →</p>
+
+<div class="exercise-buttons">
+  <button type="button" data-exercise="all">Show All</button>
+  <button type="button" data-exercise="Bench Press">Bench Press</button>
+  <button type="button" data-exercise="Chest Fly">Chest Fly</button>
+  <button type="button" data-exercise="Lat Pulldown">Lat Pulldown</button>
+  <button type="button" data-exercise="Pull-Up">Pull-Up</button>
+  <button type="button" data-exercise="Barbell Row">Barbell Row</button>
+  <button type="button" data-exercise="Incline Bench">Incline Bench</button>
+  <button type="button" data-exercise="Squat Rack">Squat Rack</button>
+  <button type="button" data-exercise="Leg Press">Leg Press</button>
+  <button type="button" data-exercise="Barbell RDL">Barbell RDL</button>
+  <button type="button" data-exercise="Calf Press">Calf Press</button>
+  <button type="button" data-exercise="Cable Crunch">Cable Crunch</button>
+  <button type="button" data-exercise="Treadmill">Treadmill</button>
+  <button type="button" data-exercise="Elliptical">Elliptical</button>
+  <button type="button" data-exercise="Rowing Machine">Rowing Machine</button>
+  <button type="button" data-exercise="StairMaster">StairMaster</button>
+</div>
+
+    <section class="grid">
+      <article class="card" data-type="strength">
+        <img src="images/bench-press.jpg" alt="Bench Press">
+        <h2>Bench Press</h2>
+        <p><strong>Exercise:</strong> Barbell bench press</p>
+        <p><strong>Instruction:</strong> Lower the bar to your chest and press up with control.</p>
+        <p class="safety"><strong>Safety Tip:</strong> Use a spotter and keep your wrists straight.</p>
+      </article>
+
+      <article class="card" data-type="strength">
+        <img src="images/chest-fly.jpg" alt="Chest Fly">
+        <h2>Chest Fly</h2>
+        <p><strong>Exercise:</strong> Machine chest fly</p>
+        <p><strong>Instruction:</strong> Bring the handles together slowly while keeping your elbows slightly bent.</p>
+        <p class="safety"><strong>Safety Tip:</strong> Do not overstretch your shoulders.</p>
+      </article>
+
+      <article class="card" data-type="strength">
+        <img src="images/lat-pulldown.jpg" alt="Lat Pulldown">
+        <h2>Lat Pulldown</h2>
+        <p><strong>Exercise:</strong> Lat pulldown</p>
+        <p><strong>Instruction:</strong> Pull the bar toward your upper chest with controlled movement.</p>
+        <p class="safety"><strong>Safety Tip:</strong> Do not pull the bar behind your neck.</p>
+      </article>
+
+      <article class="card" data-type="strength">
+        <img src="images/pull-up-bars.jpg" alt="Pull-Up">
+        <h2>Pull-Up</h2>
+        <p><strong>Exercise:</strong> Pull-ups</p>
+        <p><strong>Instruction:</strong> Pull your body up until your chin reaches the bar.</p>
+        <p class="safety"><strong>Safety Tip:</strong> Avoid swinging your body.</p>
+      </article>
+
+      <article class="card" data-type="strength">
+        <img src="images/barbell-rdl.jpg" alt="Barbell Row">
+        <h2>Barbell Row</h2>
+        <p><strong>Exercise:</strong> Bent-over row</p>
+        <p><strong>Instruction:</strong> Keep your back straight and pull the bar toward your torso.</p>
+        <p class="safety"><strong>Safety Tip:</strong> Avoid rounding your lower back.</p>
+      </article>
+
+      <article class="card" data-type="strength">
+        <img src="images/bench-press.jpg" alt="Incline Bench">
+        <h2>Incline Bench</h2>
+        <p><strong>Exercise:</strong> Incline chest press</p>
+        <p><strong>Instruction:</strong> Press the weight upward while keeping your shoulders stable.</p>
+        <p class="safety"><strong>Safety Tip:</strong> Keep your back supported on the bench.</p>
+      </article>
+
+      <article class="card" data-type="strength">
+        <img src="images/squat-racks.jpg" alt="Squat Rack">
+        <h2>Squat Rack</h2>
+        <p><strong>Exercise:</strong> Barbell squat</p>
+        <p><strong>Instruction:</strong> Lower your body with control while keeping your chest up.</p>
+        <p class="safety"><strong>Safety Tip:</strong> Use safety bars and keep proper form.</p>
+      </article>
+
+      <article class="card" data-type="strength">
+        <img src="images/leg-press.jpg" alt="Leg Press">
+        <h2>Leg Press</h2>
+        <p><strong>Exercise:</strong> Leg press push</p>
+        <p><strong>Instruction:</strong> Push the platform away using your legs with controlled movement.</p>
+        <p class="safety"><strong>Safety Tip:</strong> Do not lock your knees.</p>
+      </article>
+
+      <article class="card" data-type="strength">
+        <img src="images/barbell-rdl.jpg" alt="Barbell RDL">
+        <h2>Barbell RDL</h2>
+        <p><strong>Exercise:</strong> Romanian deadlift</p>
+        <p><strong>Instruction:</strong> Hinge at your hips and lower the bar while keeping your back straight.</p>
+        <p class="safety"><strong>Safety Tip:</strong> Keep the bar close to your legs.</p>
+      </article>
+
+      <article class="card" data-type="strength">
+        <img src="images/calf-press.jpg" alt="Calf Press">
+        <h2>Calf Press</h2>
+        <p><strong>Exercise:</strong> Calf press</p>
+        <p><strong>Instruction:</strong> Push through your toes and slowly lower your heels.</p>
+        <p class="safety"><strong>Safety Tip:</strong> Move slowly and avoid bouncing.</p>
+      </article>
+
+      <article class="card" data-type="strength">
+        <img src="images/cable-crunch.jpg" alt="Cable Crunch">
+        <h2>Cable Crunch</h2>
+        <p><strong>Exercise:</strong> Cable crunch</p>
+        <p><strong>Instruction:</strong> Crunch downward using your abs, not your arms.</p>
+        <p class="safety"><strong>Safety Tip:</strong> Keep the movement controlled.</p>
+      </article>
+
+      <article class="card" data-type="cardio">
+        <img src="images/treadmill.jpg" alt="Treadmill">
+        <h2>Treadmill</h2>
+        <p><strong>Exercise:</strong> Incline walk or running</p>
+        <p><strong>Instruction:</strong> Start slow and increase speed or incline gradually.</p>
+        <p class="safety"><strong>Safety Tip:</strong> Keep your posture straight and avoid looking down.</p>
+      </article>
+
+      <article class="card" data-type="cardio">
+        <img src="images/Elliptical.jpg" alt="Elliptical">
+        <h2>Elliptical</h2>
+        <p><strong>Exercise:</strong> Elliptical cardio</p>
+        <p><strong>Instruction:</strong> Push and pull smoothly while keeping your body balanced.</p>
+        <p class="safety"><strong>Safety Tip:</strong> Keep your feet flat and avoid leaning too much.</p>
+      </article>
+
+      <article class="card" data-type="cardio">
+        <img src="images/rowing machine.jpg" alt="Rowing Machine">
+        <h2>Rowing Machine</h2>
+        <p><strong>Exercise:</strong> Rowing</p>
+        <p><strong>Instruction:</strong> Push with your legs, then pull with your arms.</p>
+        <p class="safety"><strong>Safety Tip:</strong> Keep your back straight and avoid slouching.</p>
+      </article>
+
+      <article class="card" data-type="cardio">
+        <img src="images/StairMaster.jpg" alt="StairMaster">
+        <h2>StairMaster</h2>
+        <p><strong>Exercise:</strong> Stair climbing</p>
+        <p><strong>Instruction:</strong> Step steadily and keep your core engaged.</p>
+        <p class="safety"><strong>Safety Tip:</strong> Do not lean heavily on the handles.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+
+    <div class="footer-info">
+      <h3>Quick Info</h3>
+
+      <p><strong>Working Hours:</strong> 6:00 AM - 11:00 PM</p>
+
+      <p><strong>Location:</strong> Al Khobar, Saudi Arabia</p>
+
+      <p><strong>Contact:</strong> corefitness@email.com</p>
+
+
+    </div>
+    <p class="rights">
+    © 2026 Core Fitness. All rights reserved.
+  </p>
+  </footer>
+
+  <script src="js/exercises.js"></script>
+</body>
+</html>

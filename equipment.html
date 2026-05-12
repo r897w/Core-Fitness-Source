@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Core Fitness - Equipment Guide</title>
+  <link rel="stylesheet" href="css/equipment.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <h1>Core Fitness</h1>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="equipment.html" class="active">Equipment</a>
+      <a href="exercises.html">Exercises</a>
+      <a href="inbody.html">InBody</a>
+      <a href="workoutplan.html">Workout plan</a>
+      <a href="goalguide.html">Goal guide</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <h1>Gym Equipment Guide</h1>
+      <p>Get to know gym equipment and what muscles they train!</p>
+    </section>
+
+    <section class="equipment-section">
+      <div class="equipment-top">
+        <h2>Available Equipment</h2>
+
+        <div class="equipment-controls">
+          <label for="searchInput" class="visually-hidden">Search equipment</label>
+          <input type="text" id="searchInput" placeholder="Search equipment..." autocomplete="off" spellcheck="false">
+
+          <label for="filterSelect" class="visually-hidden">Filter equipment</label>
+          <select id="filterSelect">
+            <option value="all">All</option>
+            <option value="strength">Strength</option>
+            <option value="cardio">Cardio</option>
+          </select>
+        </div>
+      </div>
+
+       <p class="scroll-text">Scroll to see more exercises →</p>
+
+<div class="equipment-buttons">
+  <button type="button" data-equipment="all">Show All</button>
+  <button type="button" data-equipment="Bench Press">Bench Press</button>
+  <button type="button" data-equipment="Chest Fly">Chest Fly</button>
+  <button type="button" data-equipment="Lat Pulldown">Lat Pulldown</button>
+  <button type="button" data-equipment="Pull-Up">Pull-Up</button>
+  <button type="button" data-equipment="Barbell Row">Barbell Row</button>
+  <button type="button" data-equipment="Incline Bench">Incline Bench</button>
+  <button type="button" data-equipment="Squat Rack">Squat Rack</button>
+  <button type="button" data-equipment="Leg Press">Leg Press</button>
+  <button type="button" data-equipment="Barbell RDL">Barbell RDL</button>
+  <button type="button" data-equipment="Calf Press">Calf Press</button>
+  <button type="button" data-equipment="Cable Crunch">Cable Crunch</button>
+  <button type="button" data-equipment="Treadmill">Treadmill</button>
+  <button type="button" data-equipment="Elliptical">Elliptical</button>
+  <button type="button" data-equipment="Rowing Machine">Rowing Machine</button>
+  <button type="button" data-equipment="StairMaster">StairMaster</button>
+</div>
+      <div class="grid">
+        <div class="card" data-type="strength">
+          <img src="images/bench-press.jpg" alt="Bench Press">
+          <h3>Bench Press</h3>
+          <p><strong>Type:</strong> Strength</p>
+          <p><strong>Muscles:</strong> Chest, shoulders, triceps</p>
+          <p><strong>Difficulty:</strong> Beginner-Intermediate</p>
+        </div>
+
+        <div class="card" data-type="strength">
+          <img src="images/chest-fly.jpg" alt="Chest Fly">
+          <h3>Chest Fly</h3>
+          <p><strong>Type:</strong> Strength</p>
+          <p><strong>Muscles:</strong> Chest</p>
+          <p><strong>Difficulty:</strong> Beginner-Intermediate</p>
+        </div>
+
+        <div class="card" data-type="strength">
+          <img src="images/lat-pulldown.jpg" alt="Lat Pulldown">
+          <h3>Lat Pulldown</h3>
+          <p><strong>Type:</strong> Strength</p>
+          <p><strong>Muscles:</strong> Back, biceps</p>
+          <p><strong>Difficulty:</strong> Beginner-Intermediate</p>
+        </div>
+
+        <div class="card" data-type="strength">
+          <img src="images/pull-up-bars.jpg" alt="Pull-Up">
+          <h3>Pull-Up</h3>
+          <p><strong>Type:</strong> Bodyweight</p>
+          <p><strong>Muscles:</strong> Back, biceps, core</p>
+          <p><strong>Difficulty:</strong> Intermediate-Advanced</p>
+        </div>
+
+        <div class="card" data-type="strength">
+          <img src="images/barbell-rdl.jpg" alt="Barbell Row">
+          <h3>Barbell Row</h3>
+          <p><strong>Type:</strong> Free weight</p>
+          <p><strong>Muscles:</strong> Back, shoulders, biceps</p>
+          <p><strong>Difficulty:</strong> Intermediate</p>
+        </div>
+
+        <div class="card" data-type="strength">
+          <img src="images/bench-press.jpg" alt="Incline Bench">
+          <h3>Incline Bench</h3>
+          <p><strong>Type:</strong> Strength</p>
+          <p><strong>Muscles:</strong> Upper chest, shoulders, triceps</p>
+          <p><strong>Difficulty:</strong> Beginner-Intermediate</p>
+        </div>
+
+        <div class="card" data-type="strength">
+          <img src="images/squat-racks.jpg" alt="Squat Rack">
+          <h3>Squat Rack</h3>
+          <p><strong>Type:</strong> Free weight</p>
+          <p><strong>Muscles:</strong> Legs, glutes, core</p>
+          <p><strong>Difficulty:</strong> Intermediate-Advanced</p>
+        </div>
+
+        <div class="card" data-type="strength">
+          <img src="images/leg-press.jpg" alt="Leg Press">
+          <h3>Leg Press</h3>
+          <p><strong>Type:</strong> Strength</p>
+          <p><strong>Muscles:</strong> Quads, glutes, hamstrings</p>
+          <p><strong>Difficulty:</strong> Beginner-Intermediate</p>
+        </div>
+
+        <div class="card" data-type="strength">
+          <img src="images/barbell-rdl.jpg" alt="Barbell RDL">
+          <h3>Barbell RDL</h3>
+          <p><strong>Type:</strong> Free weight</p>
+          <p><strong>Muscles:</strong> Hamstrings, glutes, lower back</p>
+          <p><strong>Difficulty:</strong> Intermediate</p>
+        </div>
+
+        <div class="card" data-type="strength">
+          <img src="images/calf-press.jpg" alt="Calf Press">
+          <h3>Calf Press</h3>
+          <p><strong>Type:</strong> Strength</p>
+          <p><strong>Muscles:</strong> Calves</p>
+          <p><strong>Difficulty:</strong> Beginner</p>
+        </div>
+
+        <div class="card" data-type="strength">
+          <img src="images/cable-crunch.jpg" alt="Cable Crunch">
+          <h3>Cable Crunch</h3>
+          <p><strong>Type:</strong> Cable machine</p>
+          <p><strong>Muscles:</strong> Abs, core</p>
+          <p><strong>Difficulty:</strong> Beginner-Intermediate</p>
+        </div>
+
+        <div class="card" data-type="cardio">
+          <img src="images/treadmill.jpg" alt="Treadmill">
+          <h3>Treadmill</h3>
+          <p><strong>Type:</strong> Cardio</p>
+          <p><strong>Muscles:</strong> Lower body</p>
+          <p><strong>Difficulty:</strong> Beginner-Advanced</p>
+        </div>
+
+        <div class="card" data-type="cardio">
+          <img src="images/Elliptical.jpg" alt="Elliptical">
+          <h3>Elliptical</h3>
+          <p><strong>Type:</strong> Cardio</p>
+          <p><strong>Muscles:</strong> Full body</p>
+          <p><strong>Difficulty:</strong> Beginner-Intermediate</p>
+        </div>
+
+        <div class="card" data-type="cardio">
+          <img src="images/rowing machine.jpg" alt="Rowing Machine">
+          <h3>Rowing Machine</h3>
+          <p><strong>Type:</strong> Cardio</p>
+          <p><strong>Muscles:</strong> Legs, arms, back</p>
+          <p><strong>Difficulty:</strong> Intermediate</p>
+        </div>
+
+        <div class="card" data-type="cardio">
+          <img src="images/StairMaster.jpg" alt="StairMaster">
+          <h3>StairMaster</h3>
+          <p><strong>Type:</strong> Cardio</p>
+          <p><strong>Muscles:</strong> Glutes, quads, calves</p>
+          <p><strong>Difficulty:</strong> Beginner-Intermediate</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  <div class="footer-info">
+    <h3>Quick Info</h3>
+
+    <p><strong>Working Hours:</strong> 6:00 AM - 11:00 PM</p>
+
+    <p><strong>Location:</strong> Al Khobar, Saudi Arabia</p>
+
+    <p><strong>Contact:</strong> corefitness@email.com</p>
+  </div>
+
+  <p class="rights">
+    ©️ 2026 Core Fitness. All rights reserved.
+  </p>
+
+</footer>
+
+  <script src="js/equipment.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InBody Analysis</title>
+  <link rel="stylesheet" href="css/inbody.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <h1>Core Fitness</h1>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="equipment.html">Equipment</a>
+      <a href="exercises.html">Exercises</a>
+      <a href="inbody.html" class="active">InBody</a>
+      <a href="workoutplan.html">Workout plan</a>
+      <a href="goalguide.html">Goal guide</a>
+    </nav>
+  </header>
+
+  <div class="page">
+
+    <h1 class="title">InBody Analysis</h1>
+    <p class="subtitle">Enter your body stats and discover your ideal fitness goal.</p>
+
+    <div class="main-box">
+
+      <div class="inputs-row">
+
+        <div class="input-group">
+          <label for="bodyFat">Body Fat %</label>
+          <input id="bodyFat" type="number" class="fake-input" placeholder="2 - 60">
+          <p id="bodyFatError" class="input-error"></p>
+        </div>
+
+        <div class="input-group">
+          <label for="muscleMass">Muscle Mass (kg)</label>
+          <input id="muscleMass" type="number" class="fake-input" placeholder="10 - 70">
+          <p id="muscleMassError" class="input-error"></p>
+        </div>
+
+        <div class="input-group">
+          <label for="weight">Weight (kg)</label>
+          <input id="weight" type="number" class="fake-input" placeholder="20 - 300">
+          <p id="weightError" class="input-error"></p>
+        </div>
+
+      </div>
+
+      <div class="button-wrap">
+        <button id="analyzeBtn" class="analyze-btn" type="button">Analyze</button>
+      </div>
+
+      <hr class="divider">
+
+      <div class="goal-label">Suggested Goal:</div>
+
+      <div id="goalBox" class="goal-box">Goal Result</div>
+
+      <p id="adviceText" class="advice">
+        Enter your InBody information and click Analyze to see your suggested fitness goal.
+      </p>
+
+    </div>
+  </div>
+
+  <footer>
+
+  <div class="footer-info">
+    <h3>Quick Info</h3>
+
+    <p><strong>Working Hours:</strong> 6:00 AM - 11:00 PM</p>
+
+    <p><strong>Location:</strong> Al Khobar, Saudi Arabia</p>
+
+    <p><strong>Contact:</strong> corefitness@email.com</p>
+  </div>
+
+  <p class="rights">
+    ©️ 2026 Core Fitness. All rights reserved.
+  </p>
+
+</footer>
+
+  <script src="js/inbody.js"></script>
+
+</body>
+</html>

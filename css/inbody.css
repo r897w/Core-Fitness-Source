@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fee2e2;
+    color: #222;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: white;
+    padding: 18px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: #b91c1c;
+    font-size: 26px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7f1d1d;
+    font-weight: bold;
+    padding-bottom: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ef4444;
+}
+
+nav a.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ef4444;
+    bottom: 0;
+    left: 0;
+}
+
+.page {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #444853;
+    margin-bottom: 45px;
+}
+
+.main-box {
+    border: 3px solid #6f7380;
+    border-radius: 35px;
+    padding: 45px 35px;
+}
+
+.inputs-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.input-group {
+    flex: 1;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.fake-input {
+    width: 100%;
+    height: 50px;
+    background-color: #efefef;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    padding: 0 18px;
+    font-size: 16px;
+}
+
+/* يضاف هذا الكلاس بالجافاسكربت إذا الرقم خطأ */
+.invalid-input {
+    border: 2px solid #991b1b;
+    background-color: #fff1f2;
+}
+
+.input-error {
+    display: none;
+    color: #991b1b;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.button-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.analyze-btn {
+    min-width: 280px;
+    height: 55px;
+    border: none;
+    border-radius: 999px;
+    background-color: #6f7078;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.analyze-btn:hover {
+    background-color: #4b4c54;
+    box-shadow: 0 0 14px rgba(75, 76, 84, 0.75);
+    transform: scale(1.03);
+}
+
+.divider {
+    border: none;
+    border-top: 2px solid #7e8289;
+    margin-bottom: 35px;
+}
+
+.goal-label {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.goal-box {
+    width: 50%;
+    margin: 0 auto 25px;
+    background-color: #e58f8f;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 8px;
+    transition: 0.3s;
+}
+
+.goal-clickable {
+    cursor: pointer;
+}
+
+.goal-clickable:hover {
+    background-color: #c2185b;
+    color: white;
+    box-shadow: 0 0 14px rgba(194, 24, 91, 0.75);
+    transform: scale(1.03);
+}
+
+.advice {
+    font-size: 16px;
+    color: #353b47;
+}
+
+.error-message {
+    color: #991b1b;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .inputs-row {
+        flex-direction: column;
+    }
+
+    .input-group {
+        text-align: center;
+    }
+
+    .input-error {
+        text-align: center;
+    }
+
+    .goal-box {
+        width: 100%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+}
+
+footer{
+    background:white;
+    margin-top:40px;
+    padding:25px;
+    text-align:center;
+}
+
+.footer-info h3{
+    color:#b91c1c;
+    margin-bottom:10px;
+}
+
+.footer-info p{
+    margin-bottom:6px;
+    color:#444;
+}
+
+.rights{
+    margin-top:15px;
+    font-weight:bold;
+    color:#7f1d1d;
+}
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff8f8;
+    border-left: 1px solid #f0caca;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4d4c4c;
+    border-radius: 999px;
+    border: 4px solid #fff8f8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #8f1212;
+}
